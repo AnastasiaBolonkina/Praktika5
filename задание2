@@ -1,0 +1,4 @@
+surname = (str(input("Ваша фамилия: ")))
+name = (str(input("Ваше имя: ")))
+patronymic = (str(input("Ваше отчество: ")))
+print("ФИО = ",(surname[0]+"."),(name[0]+"."),(patronymic[0]+"."))
