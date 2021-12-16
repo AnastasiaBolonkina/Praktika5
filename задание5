@@ -1,0 +1,16 @@
+glas = ['а', 'о', 'у', 'э', 'ы', 'я', 'ё', 'е', 'ю', 'и']
+def glas(a): 
+  b = 0
+  for element in a:
+    if element in glas:
+      b=b+1
+  return b
+def consonant(a):
+  b = 0
+  for element in a:
+    if element not in glas:
+      b=b+1
+  return b
+a = input()
+print(glas(a))
+print(consonant(a))
