@@ -1,0 +1,29 @@
+from random import randint
+import random
+correct=0
+wrong=0
+vict={'Китай': 'Пекин','Южная Корея': 'Сеул','Германия': 'Берлин'}
+num=int(input("введите число стран и столиц которое хотите добавить в словарь: "))
+for i in range(0,num,1):
+  country=input("введите страну ")
+  capital=input("введите столицу ")
+  vict[country] = capital
+  
+
+attempts=int(input("Введите число желаемых попыток "))
+
+while attempts>0:
+  a=randint(0, len(vict))
+  random_country=list(vict.keys())[a]
+  random_capital=list(vict.values())[a]
+  print("Угадайте столицу страны",random_country)
+  user_guess=input()
+  if user_guess==random_capital:
+    correct=correct+1
+    attempts=attempts-1
+  else:
+   wrong=wrong+1
+   attempts=attempts-1
+
+print("число правильных ответов: ",correct)
+print("число неправильных ответов: ",wrong)
