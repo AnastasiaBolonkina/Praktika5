@@ -1,0 +1,12 @@
+def func(spisok,a):
+  spisok=input("введите список ")
+  spisok=[int(c) for c in spisok]
+  print(spisok)
+  length=len(spisok)
+  a=int(input("введите a "))
+  print("числа большие a:")
+  for i in range(0,length,1):
+    if spisok[i]>a:
+       print(spisok[i])
+
+func(spisok,a)
