@@ -1,0 +1,5 @@
+string = input()
+a = {}
+for i in string:
+  a[i] = a.get(i,0) + 1
+print(a)
